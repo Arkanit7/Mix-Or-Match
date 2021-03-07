@@ -1,13 +1,15 @@
 @font-face {
     font-family: "Creepy";
-    src: url("Assets/Fonts/Creepy.woff") format("woff"),
-         url("Assets/Fonts/Creepy.woff2") format("woff2");
+    src: url("Assets/Fonts/Creepy.woff2") format("woff2"),
+         url("Assets/Fonts/Creepy.woff") format("woff");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Lunacy";
-    src: url("Assets/Fonts/Lunacy.woff") format("woff"),
-         url("Assets/Fonts/Lunacy.woff2") format("woff2");
+    src: url("Assets/Fonts/Lunacy.woff2") format("woff2"),
+         url("Assets/Fonts/Lunacy.woff") format("woff");
+    font-display: swap;
 }
 
 * {
@@ -17,7 +19,7 @@
 html {
   min-height: 100vh;
   cursor: url(Assets/Cursors/Ghost.cur), auto;
-  font-family: Lunacy;
+  font-family: Lunacy, fantasy;
 }
 
 body {
@@ -27,7 +29,7 @@ body {
 
 .page-title {
   color: #FF6D00;
-  font-family: Creepy, serif;
+  font-family: Creepy, fantasy;
   font-weight: normal;
   text-align: center;
   font-size: 6em;
@@ -166,7 +168,7 @@ body {
   align-items: center;
   flex-direction: column;
   color: #FF6D00;
-  font-family: Creepy, serif;
+  font-family: Creepy, fantasy;
   transition: background-color 500ms, font-size 500ms;
 }
 
